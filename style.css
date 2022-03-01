@@ -1,0 +1,1355 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.topbackand{
+    position: relative;
+display: flex;
+height: 500px;
+background-color: rgb(102, 102, 102);
+}
+.container{
+    position: relative;
+   overflow: hidden;
+    width: 100%;
+    height: 80vh;
+}
+.container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    animation: animate 30s linear infinite;
+}
+.container .slider .slide{
+    position: relative;
+    display: flex;
+    width: 20%;
+    height: 100%;
+    float: left;
+
+}
+
+.container .slider .slide .caption{
+    position: absolute;
+    display: flex;
+    bottom: 20px;
+    left: 250px;
+    right: 250px;
+    padding: 30px;
+    box-sizing: border-box;
+    transition:  0.5s;
+}
+
+.container .slider .slide .caption .buttonfirst{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 20px;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+    transition:  0.5s;
+}
+.container .slider .slide .caption .buttonsecond{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 20;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+}
+.container .slider .slide.slide1{
+    background: url(123123.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide2{
+    background: url(234234.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide3{
+    background: url(345345.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide4{
+    background: url(456456.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes animate {
+
+
+    10%
+    {
+        left: 0;
+    }
+    
+    20%
+    {
+        left: 0;
+    }
+    25%
+    {
+        left: -100%;
+    }
+    45%
+    {
+        left: -100%;
+    }
+    50%
+    {
+        left: -200%;
+    }
+    70%
+    {
+        left: -200%;
+    }
+    75%
+    {
+        left: -300%;
+    }
+    95%
+    {
+        left: -300%;
+    }
+    
+
+}
+
+.topbar{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.445);
+
+}
+.topbar span{
+    color: white;
+    font-size: 18px;
+}
+.topbarnumbers{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 3;
+}
+.topbarnumber{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-top: 5px;
+    margin-left: 50px;
+    
+}
+.topbaremail{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+.topbarabout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+.topbarrooms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.topbarnews{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+.topbargallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.topbarcontact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.topbarsearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.firmlogo{
+    position: absolute;
+    display: flex;
+flex-direction: column;
+margin-top: 100px;
+margin-left: 0px;
+width: 400px;
+height: 200px;
+
+}
+.firmlogotop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.firmlogobottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    font-family: 'Libre Baskerville', serif;
+
+}
+/* From cssbuttons.io by @meermubashar */
+button {
+    width: 140px;
+    height: 45px;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    transition: all 0.5s;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+   
+   button:hover {
+    color: black;
+   }
+     
+   button:active:before {
+    background: #b9b9b9;
+   }
+
+
+.white{
+    width: 100%;
+    height: 10%;
+
+}
+.hakkimiz{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 1000px;
+}
+.hakkimizdatext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    color: black;
+    font-weight: 550;
+    height: 20%;
+
+}
+.hakkimizphoto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 90%;
+    height: 800px;
+    border-radius: 20px;
+}
+.imageabout{
+    display: flex;
+    float: left;
+    width: 100%;
+    height: 35%;
+    border-radius: 20px;
+}
+.img1{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% 20% / 10% 40%;
+}
+.img1 img{
+    border-radius: 50% 20% / 10% 40%;
+}
+.img2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.img2 img{
+    border-radius: 50% 20% / 10% 40%;
+}
+.img3{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img3 img{
+    border-radius: 50% 20% / 10% 40%;
+}
+.textabout{
+    width: 100%;
+    height: 65%;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    height: 20%;
+    margin-top: 20px;
+}
+
+.abouttext{
+    
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    inline-size: 100%;
+    display: flex;
+    width: 100%;
+    height: 80%; 
+}
+.buttonsize{
+
+    display: flex;
+
+    margin-top: 100px;
+
+}
+
+    .button1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    margin-top: 20px;
+    width: 170px;
+}
+
+.button1:before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+border-radius: 50px;
+background: #b1b1b1;
+width: 45px;
+height: 45px;
+transition: all 0.3s ease;
+}
+
+.button1 span {
+position: relative;
+font-family: "Ubuntu", sans-serif;
+font-size: 18px;
+font-weight: 700;
+letter-spacing: 0.05em;
+color: black;
+}
+
+.button1 svg {
+position: relative;
+top: 0;
+margin-left: 10px;
+fill: none;
+stroke-linecap: round;
+stroke-linejoin: round;
+stroke: #000000;
+stroke-width: 2;
+transform: translateX(-5px);
+transition: all 0.3s ease;
+}
+
+.button1:hover:before {
+width: 100%;
+background: #ddc438c2;
+}
+
+.button1:hover svg {
+transform: translateX(0);
+}
+
+.button1:active {
+transform: scale(0.95);
+}
+
+.room{
+display: flex;
+align-items: center;
+flex-direction: column;
+margin-top: 50px; 
+width: 100%;
+height: 1660px;
+
+}
+.roomtext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 36px;
+    height: 20%;
+    width: 90%;
+}
+.firstseries{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 47%;
+}
+.room1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    flex: 2;
+    margin-right: 15px;
+
+}
+.room1img{
+    display: flex;
+    justify-content: center;
+    flex: 5;
+    
+
+}
+.room1img img{
+    border-radius: 30px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+}
+.room1icon{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1;
+}
+.room1icon1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.room1icon2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.room1icon3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.room1icon4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.room1icon5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.room1text{
+    display: flex;
+    flex: 5;
+}
+.room1textleft{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+   
+}
+.room1texttitle{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 550;
+}
+
+.room1texttext{
+    flex: 2;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+
+
+}
+.room1textbutton{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.room1textright img{   
+    border-radius: 30px;
+}
+.room2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 15px;
+}
+.room2img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.room2img img{
+    
+    border-radius: 30px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+}
+.room2img{
+    display: flex;
+    flex: 5;
+}
+.room2icon{
+    display: flex;
+    flex: 1;
+}
+.room2icon1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.room2icon2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.room2icon3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.room2icon4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.room2icon5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.room2text{
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+.room2title{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 550;
+}
+
+.room2texttext{
+    display: flex;
+    flex: 3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.room2textbutton{
+    display: flex;
+    flex: 1;
+}
+.secondseries{
+    height: 6%;
+}
+.thirdseries{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 47%;
+}
+.room3{
+    display: flex;
+    flex: 1;
+    margin-right: 15px;
+    flex-direction: column;
+}
+.room3img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 5;
+}
+.room3img img{
+    border-radius: 30px;
+}
+.room3icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.room3icon1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+.room3icon2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+.room3icon3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+.room3icon4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+.room3icon5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+.room3text{
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+.room3texttitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 550;
+}
+.room3texttext{
+    display: flex;
+    float: 3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.2; 
+}   
+.room3button{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.room4{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+}
+.room4img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 5;
+}
+.room4img img{
+    border-radius: 30px;
+}
+.room4icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.room4icon1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+.room4icon2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+.room4icon3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+.room4icon4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+.room4icon5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+.room4text{
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+.room4texttitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 550;
+}
+.room4texttext{
+    display: flex;
+    float: 3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.2; 
+}   
+.room4button{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.room5{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+}
+.room5img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 5;
+}
+.room5img img{
+    border-radius: 30px;
+}
+.room5iconGroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.room5icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+.room5text{
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+.room5texttitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 550;
+}
+.room5texttext{
+    display: flex;
+    float: 3;
+
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.2; 
+}   
+.room5button{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.news{
+    display: flex;
+align-items: center;
+    flex-direction: column;
+    height: 1000px;
+
+}
+.newstitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 90%;
+
+}
+.newstitlesize{
+    font-family: 'Shippori Mincho', serif;
+    font-size: 36px;
+  
+}
+.newssections{
+    display: flex;
+    flex: 1 58%;
+    width: 90%;
+}
+.newssection1{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.newssection1-img{
+    display: flex;
+    flex: 1 40%;
+}
+.newssection1-img img{
+    border-radius: 30px;
+}
+.newssection1-title{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 550;
+    align-items: center;
+    justify-content: center;
+    flex: 1 15%;
+}
+.newssection1-text{
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.2; 
+    flex: 1 25%;
+}
+.newssection1-time{
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    flex: 1 15%;
+}
+.newssection1-button{
+    display: flex;
+    flex: 1 5%;
+}
+.newssection2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.newssection2-img{
+    display: flex;
+    flex: 1 40%;
+}
+.newssection2-img img{
+    border-radius: 30px;
+}
+.newssection2-title{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 550;
+    align-items: center;
+    justify-content: center;
+    flex: 1 15%;
+}
+.newssection2-text{
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.2; 
+    flex: 1 20%;
+}
+.newssection2-time{
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    flex: 1 15%;
+}
+.newssection2-button{
+    display: flex;
+    flex: 1 10%;
+}
+.newssection3{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.newssection3-img{
+    display: flex;
+    flex: 1 40%;
+}
+.newssection3-img img{
+    border-radius: 30px;
+}
+.newssection3-title{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 550;
+    align-items: center;
+    justify-content: center;
+    flex: 1 15%;
+}
+.newssection3-text{
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.2; 
+    flex: 1 25%;
+}
+.newssection3-time{
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    flex: 1 15%;
+}
+.newssection3-button{
+    display: flex;
+    flex: 1 5%;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 1700px;
+}
+.gallerytitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 36px;
+}
+.galleryphotos{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+.galleryphotostop{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    margin-bottom: 30px;
+}
+.galleryphotostop img{
+    transform: scale(1);
+    border-radius: 10% / 50%;
+    box-shadow: 0 0 5px 5px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+.galleryphotostop img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+.galleryphoto1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;    
+}
+.galleryphoto2{
+    display: flex;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleryphotocenter{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.galleryphotocenter img{
+    transform: scale(1);
+    box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+    border-radius: 25% / 40%;
+}
+.galleryphotocenter img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+    border-radius: 25% / 40%;
+}
+.galleryphoto3{
+    display: flex;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+}
+.galleryphoto4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+.galleryphoto5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+.galleryphotosbottom{
+    display: flex;
+    flex: 1;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.galleryphoto7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;    
+}
+.galleryphoto8{
+    display: flex;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+}
+.galleryphotosbottom img{
+    transform: scale(1);
+    border-radius: 10% / 50%;
+    box-shadow: 0 0 5px 5px rgba(145, 145, 145, 0.959);
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+.galleryphotosbottom img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+    margin-top: 30px;
+}
+.contacttitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 36px;
+}
+.contacbottom{
+    display: flex;
+    flex: 4;
+}
+.contactimg{
+    display: flex;
+    flex: 3.7;
+   
+}
+.contactimg img{
+    background-color: #8d8c83;border-radius: 0px 200px 200px 0px;
+}
+.contacttype{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+.contactwelcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 32px;
+
+    flex: 1;
+
+}
+.contactname{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.inputtext{
+    display:flex ;
+    height: 50%;
+
+    margin-left: 20px;
+    font-size: 17px;
+    border: none;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    padding: 0px 16px;
+
+
+}
+.contactemail{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.roomtypesize{
+    margin-left: 25px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.contactroomtype{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+}
+.contactnumbertype{
+    display:flex ;
+    height: 50%;
+    width: 60%;
+    margin-left: 20px;
+    font-size: 17px;
+    border: none;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    padding: 0px 16px;
+
+}
+.contacttime1{
+    display: flex;
+    flex: 1;
+}
+.contacttime2{
+    display: flex;
+    flex: 1;
+}
+.contactguests{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+}
+.contacttexttype{
+    display:flex ;
+    flex: 1;
+    height: 100%;
+    
+    margin-left: 20px;
+    border: none;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    padding: 0px 16px;
+}
+.contactguestsroom{
+    display:flex ;
+    height: 50%;
+    width: 20%;
+    margin-left: 20px;
+    border: none;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    padding: 0px 16px;
+
+}
+.contactbooknow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+ 
+}
+
+
+
+
+/* From cssbuttons.io by @NorthFishHasNa */
+.contactbooknowbutton {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3d405b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   }
+   
+   .contactbooknowbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   .contactbooknowbutton span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   .contactbooknowbutton:hover span {
+    padding-right: 15px;
+   }
+   
+   .contactbooknowbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+
+
+
+
+
+.returnHeadersize a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.returnHeader{
+    background-color: #1b19196e;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
+@media (max-width: 768px)
+{
+
+    .container .slider .slide .caption{
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 20px;
+    }
+    .container .slider .slide .caption h2{
+        margin: 10px;
+        font-size: 30px;
+    }
+    .container .slider .slide .caption p{
+        font-size: 16px;
+    }
+
+
+}

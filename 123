@@ -1,0 +1,81 @@
+</div>
+<div class="slide slide2">
+ <div class="caption">
+     <h2>Slide 2</h2>
+     <p>Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements. Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.
+      Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.
+      Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.
+     
+     </p>
+ </div>
+</div>
+<div class="slide slide3">
+ <div class="caption">
+     <h2>Slide 3</h2>
+     <p>Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements. Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.
+      Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.
+      Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.
+
+     </p>
+ </div>
+</div>
+<div class="slide slide4">
+ <div class="caption">
+     <h2>Slide 4</h2>
+     <p>Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements. Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.
+      Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.
+      Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.
+    
+     </p>
+ </div>    
+</div>
+
+
+
+10%
+{
+    left: 0;
+}
+
+20%
+{
+    left: 0;
+}
+25%
+{
+    left: -100%;
+}
+45%
+{
+    left: -100%;
+}
+50%
+{
+    left: -200%;
+}
+70%
+{
+    left: -200%;
+}
+75%
+{
+    left: -300%;
+}
+95%
+{
+    left: -300%;
+}
+
+.container .slider .slide .caption h2{
+    margin: 0 0 20px;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+transition:  0.5s;
+}
+.container .slider .slide .caption p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+}

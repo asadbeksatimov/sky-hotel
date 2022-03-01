@@ -1,0 +1,285 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.topbackand{
+    position: relative;
+display: flex;
+height: 700px;
+background-color: rgb(102, 102, 102);
+}
+.container{
+    position: relative;
+   overflow: hidden;
+    width: 100%;
+    height: 80vh;
+}
+.container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    animation: animate 10s linear infinite;
+}
+.container .slider .slide{
+    position: relative;
+    display: flex;
+    width: 20%;
+    height: 100%;
+    float: left;
+
+}
+
+.container .slider .slide .caption{
+    position: absolute;
+    display: flex;
+    bottom: 20px;
+    left: 250px;
+    right: 250px;
+    padding: 30px;
+    box-sizing: border-box;
+    transition:  0.5s;
+}
+
+.container .slider .slide .caption .buttonfirst{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 20px;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+    transition:  0.5s;
+}
+.container .slider .slide .caption .buttonsecond{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 20;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+}
+.container .slider .slide.slide1{
+    background: url(123123.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide2{
+    background: url(234234.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide3{
+    background: url(345345.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .slider .slide.slide4{
+    background: url(456456.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes animate {
+
+
+    10%
+    {
+        left: 0;
+    }
+    
+    20%
+    {
+        left: 0;
+    }
+    25%
+    {
+        left: -100%;
+    }
+    45%
+    {
+        left: -100%;
+    }
+    50%
+    {
+        left: -200%;
+    }
+    70%
+    {
+        left: -200%;
+    }
+    75%
+    {
+        left: -300%;
+    }
+    95%
+    {
+        left: -300%;
+    }
+    
+
+}
+
+.topbar{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.445);
+
+}
+.topbar span{
+    color: white;
+    font-size: 18px;
+}
+.topbarnumbers{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 3;
+}
+.topbarnumber{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-top: 5px;
+    margin-left: 50px;
+    
+}
+.topbaremail{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+.topbarabout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+.topbarrooms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.topbarnews{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+.topbargallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.topbarcontact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.topbarsearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.firmlogo{
+    position: absolute;
+    display: flex;
+flex-direction: column;
+margin-top: 100px;
+margin-left: 0px;
+width: 400px;
+height: 200px;
+
+}
+.firmlogotop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.firmlogobottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    font-family: 'Libre Baskerville', serif;
+
+}
+/* From cssbuttons.io by @meermubashar */
+button {
+    width: 140px;
+    height: 45px;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    transition: all 0.5s;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+   
+   button:hover {
+    color: black;
+   }
+     
+   button:active:before {
+    background: #b9b9b9;
+   }
+
+@media (max-width: 768px)
+{
+
+    .container .slider .slide .caption{
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 20px;
+    }
+    .container .slider .slide .caption h2{
+        margin: 10px;
+        font-size: 30px;
+    }
+    .container .slider .slide .caption p{
+        font-size: 16px;
+    }
+
+
+}
